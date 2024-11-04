@@ -36,17 +36,17 @@ export default {
     const router = useRouter();
       const isPopupVisible = ref(false);
 
-    // List of valid cities
+    
     const validCities = [
       'Delhi', 'Moscow', 'Paris', 'New York', 'Sydney', 'Riyadh'
     ];
 
     const validateCity = () => {
-      // Check if city name is in the list
+      
       if (!validCities.includes(city.value.trim())) {
           isPopupVisible.value = true; 
       } else {
-        // Navigate to results if the city is valid
+        
         router.push({ name: 'WeatherResults', params: { city: city.value } });
       }
     };
