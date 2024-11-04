@@ -11,7 +11,7 @@
       <button type="submit" class="bg-blue-500 text-white p-2 rounded">Search</button>
     </form>
 
-     <!-- Modal Popup for Invalid City -->
+   
     <div v-if="isPopupVisible" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
       <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm text-center">
         <p class="text-lg mb-4">Please enter a valid city name</p>
